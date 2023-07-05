@@ -1,3 +1,4 @@
+using System;
 using DGames.ObjectEssentials;
 using DGames.ObjectEssentials.Scriptable;
 using UnityEngine;
@@ -23,7 +24,12 @@ namespace DGames.Audio.AddOns
             SoundEnable.Binder.Bind(ValueChanged,this);
         }
 
-    
+
+        private void OnDestroy()
+        {
+            SoundEnable.Binder.UnBind(this);
+        }
+
 
         private void ValueChanged(bool b)
         {
