@@ -1,0 +1,16 @@
+{
+    "name": "com.dgames.audio",
+    "rootNamespace": "",
+    "references": [
+        "GUID:440eef12e07e944e8a69ea9070a2bcb9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
