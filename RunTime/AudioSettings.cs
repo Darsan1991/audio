@@ -48,6 +48,7 @@ namespace DGames.Audio
         // ReSharper disable once FlagArgument
         public static bool IsEnable(int type)
         {
+            Default.InitIfNeeded();
             if (!Default._typeVsValues.ContainsKey(type))
             {
                 Debug.LogWarning($"Audio Type:{type} Not Found");
@@ -60,6 +61,8 @@ namespace DGames.Audio
         // ReSharper disable once FlagArgument
         public static void SetEnable(int type,bool enable)
         {
+            Default.InitIfNeeded();
+
             if (!Default._typeVsValues.ContainsKey(type))
             {
                 Debug.LogWarning($"Audio Type:{type} Not Found");
@@ -71,6 +74,8 @@ namespace DGames.Audio
         
         public static void ToggleEnable(int type)
         {
+            Default.InitIfNeeded();
+
             if (!Default._typeVsValues.ContainsKey(type))
             {
                 Debug.LogWarning($"Audio Type:{type} Not Found");
